@@ -1,0 +1,19 @@
+{
+  "name": "web-component-zero-to-hero",
+  "version": "1.0.0",
+  "description": "web component 学习练习",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackchoumine/web-component-zero-to-hero.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jackchoumine/web-component-zero-to-hero/issues"
+  },
+  "homepage": "https://github.com/jackchoumine/web-component-zero-to-hero#readme"
+}
