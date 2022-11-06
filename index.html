@@ -14,6 +14,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="./index.js" type="module"></script>
   <title>Document</title>
+  <style>
+    hello-world {
+      background-color: lightblue;
+      font-size: 40px;
+    }
+  </style>
 </head>
 
 <body>
@@ -21,6 +27,14 @@
   <my-element></my-element>
   <button>移除my-element</button>
   <button class="btn">修改 my-attr</button>
+  <hr>
+  <hello-world></hello-world>
+  <my-card class="my-card"></my-card>
+  <div id="container">
+    <div>
+      <my-card></my-card>
+    </div>
+  </div>
   <script>
     const btn = document.querySelector('button')
     const secondBtn = document.querySelector('.btn')
@@ -32,6 +46,12 @@
       // myEle['my-attr'] = 'hello'
       myEle.setAttribute('my-attr', '1234')
     })
+    const helloWorld = document.querySelector('hello-world')
+    setTimeout(() => {
+      helloWorld.setAttribute('name', 'everyone')
+    }, 1000);
+    console.log('shadowRoot')
+    console.log(helloWorld.shadowRoot)
   </script>
 </body>
 
