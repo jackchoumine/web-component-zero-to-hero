@@ -4,6 +4,8 @@
   "description": "web component 学习练习",
   "main": "index.js",
   "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,17 @@
   "bugs": {
     "url": "https://github.com/jackchoumine/web-component-zero-to-hero/issues"
   },
-  "homepage": "https://github.com/jackchoumine/web-component-zero-to-hero#readme"
+  "homepage": "https://github.com/jackchoumine/web-component-zero-to-hero#readme",
+  "devDependencies": {
+    "@babel/core": "~7.20.2",
+    "@storybook/addon-actions": "~6.5.13",
+    "@storybook/addon-essentials": "~6.5.13",
+    "@storybook/addon-interactions": "~6.5.13",
+    "@storybook/addon-links": "~6.5.13",
+    "@storybook/builder-webpack4": "~6.5.13",
+    "@storybook/html": "~6.5.13",
+    "@storybook/manager-webpack4": "~6.5.13",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-loader": "~9.1.0"
+  }
 }

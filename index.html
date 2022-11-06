@@ -7,29 +7,32 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./index.js" type="module"></script>
-    <title>Document</title>
-  </head>
-  <body>
-    <h2>web component</h2>
-    <my-element></my-element>
-    <button>移除my-element</button>
-    <button class="btn">修改 my-attr</button>
-    <script>
-      const btn = document.querySelector('button')
-      const secondBtn = document.querySelector('.btn')
-      const myEle = document.querySelector('my-element')
-      btn.addEventListener('click', () => {
-        document.body.removeChild(myEle)
-      })
-      secondBtn.addEventListener('click', () => {
-        // myEle['my-attr'] = 'hello'
-        myEle.setAttribute('my-attr', '1234')
-      })
-    </script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="./index.js" type="module"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>web component</h2>
+  <my-element></my-element>
+  <button>移除my-element</button>
+  <button class="btn">修改 my-attr</button>
+  <script>
+    const btn = document.querySelector('button')
+    const secondBtn = document.querySelector('.btn')
+    const myEle = document.querySelector('my-element')
+    btn.addEventListener('click', () => {
+      document.body.removeChild(myEle)
+    })
+    secondBtn.addEventListener('click', () => {
+      // myEle['my-attr'] = 'hello'
+      myEle.setAttribute('my-attr', '1234')
+    })
+  </script>
+</body>
+
 </html>
